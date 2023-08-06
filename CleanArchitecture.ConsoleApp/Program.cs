@@ -9,10 +9,23 @@ StreamerDbContext dbContext = new();
 
 //await AddNewRecords();
 //QueryStreaming();
-await QueryMethods();
+
+await QueryLinq();
 
 Console.WriteLine("Presione cualquier tecla para terminar el programa");
 Console.ReadKey();
+
+
+
+async Task QueryLinq()
+{
+    var streamer =  await (from i  in dbContext.Streamers select i).ToListAsync();
+    foreach (var item in streamer)
+    {
+        Console.WriteLine($"{item.Id} - {item.Nombre}");
+    }
+}
+
 
 async Task QueryMethods()
 {
