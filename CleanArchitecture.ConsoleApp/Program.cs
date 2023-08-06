@@ -3,6 +3,7 @@
 using CleanArchitecture.Data;
 using CleanArchitecture.Domain;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography.X509Certificates;
 
 StreamerDbContext dbContext = new();
 
@@ -16,12 +17,14 @@ async Task QueryFilter ()
 {
     Console.WriteLine("Ingrese una compañia de Stream");
     var streamName = Console.ReadLine();
-    var streamers = await dbContext!.Streamers.Where(x => x.Nombre.Contains(streamName)).ToListAsync();
+    var streamers = await dbContext!.Streamers.Where(x => x.Nombre.Equals(streamName)).ToListAsync();
 
     foreach (var item in streamers)
     {
         Console.WriteLine($"{item.Id} -{item.Nombre }");
     }
+
+    var streamerPartialResult = await  dbContext.Streamers.Where(x => x.Nombre.Contains(streamName)).ToListAsync();
 }
 
 void QueryStreaming()
