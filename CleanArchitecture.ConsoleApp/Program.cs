@@ -9,10 +9,22 @@ StreamerDbContext dbContext = new();
 
 //await AddNewRecords();
 //QueryStreaming();
-await QueryFilter();
+await QueryMethods();
 
 Console.WriteLine("Presione cualquier tecla para terminar el programa");
 Console.ReadKey();
+
+async Task QueryMethods()
+{
+    var streamer = dbContext!.Streamers!;
+    var firstAsync = await dbContext!.Streamers!.FirstAsync(x => x.Nombre.Contains("a"));
+
+    var firstOrDefault = await dbContext!.Streamers!.FirstOrDefaultAsync(x => x.Nombre.Contains("a"));
+
+    var singleAsync = await streamer.Where(y => y.Id ==1).SingleAsync();
+    var singleOrDefaultAsync =  await streamer.Where(y => y.Id == 1).SingleOrDefaultAsync();
+    
+}
 async Task QueryFilter ()
 {
     Console.WriteLine("Ingrese una compañia de Stream");
@@ -24,12 +36,12 @@ async Task QueryFilter ()
         Console.WriteLine($"{item.Id} -{item.Nombre }");
     }
 
-    //var streamerPartialResult = await  dbContext.Streamers.Where(x => x.Nombre.Contains(streamName)).ToListAsync();
-    var streamerPartialResult = await dbContext.Streamers.Where>(x => EF.Functions.Like(x.Nombre, $"%{streamName}%")).ToListAsync();
-    foreach (var item in streamerPartialResult)
-    {
-        Console.WriteLine($"{item.Id} -{item.Nombre}");
-    }
+    ////var streamerPartialResult = await  dbContext.Streamers.Where(x => x.Nombre.Contains(streamName)).ToListAsync();
+    //var streamerPartialResult = await dbContext.Streamers.Where>(x => EF.Functions.Like(x.Nombre, $"%{streamName}%")).ToListAsync();
+    //foreach (var item in streamerPartialResult)
+    //{
+    //    Console.WriteLine($"{item.Id} -{item.Nombre}");
+    //}
 }
 
 void QueryStreaming()
