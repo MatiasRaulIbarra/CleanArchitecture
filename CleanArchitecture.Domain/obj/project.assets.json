@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\Solution1\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
       "projectName": "CleanArchitecture.Domain",
-      "projectPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\Solution1\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+      "projectPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
       "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\Solution1\\CleanArchitecture.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

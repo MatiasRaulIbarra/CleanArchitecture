@@ -10,16 +10,33 @@ StreamerDbContext dbContext = new();
 //await AddNewRecords();
 //QueryStreaming();
 
-await QueryLinq();
+//await QueryLinq();
 
 Console.WriteLine("Presione cualquier tecla para terminar el programa");
 Console.ReadKey();
+
+async Task TrackingAndNotTracking()
+{
+    var streamWithTracking = await dbContext!.Streamers!.FirstOrDefaultAsync(x => x.Id== 1);
+
+    var streamerWithNotTracking = await dbContext!.Streamers!.AsNoTracking().FirstOrDefaultAsync(x => x.Id== 2);
+
+    streamWithTracking.Nombre = "Netflix Super";
+    streamerWithNotTracking.Nombre = "Amazon Plus";
+
+    await dbContext!.SaveChangesAsync();//
+
+}
 
 
 
 async Task QueryLinq()
 {
-    var streamer =  await (from i  in dbContext.Streamers select i).ToListAsync();
+    Console.WriteLine($"Ingrese el servicion de streaming");
+    var streamirNombre = Console.ReadLine();
+    var streamer =  await (from i  in dbContext.Streamers
+                           where EF.Functions.Like(i.Nombre, $"%{streamirNombre}%")
+                           select i).ToListAsync();
     foreach (var item in streamer)
     {
         Console.WriteLine($"{item.Id} - {item.Nombre}");

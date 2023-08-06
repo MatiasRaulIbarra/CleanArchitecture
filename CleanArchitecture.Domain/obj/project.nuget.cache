@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xeZD2gWZvnkpqwh/rZbyNgKMrVGfL19IizbrlKaRNFJBtG1yjd8XyxErTwVwysvHN840u0q6E5/Oc8vlc+YrcA==",
+  "dgSpecHash": "HUfHI6GTfGnReCIL6V3R977muvyjI1hYAdIZQqzFamPLkKwJ7GnSuXujvI6EzH8HLlWeGsiR/g29hXlRMLmqhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\Solution1\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

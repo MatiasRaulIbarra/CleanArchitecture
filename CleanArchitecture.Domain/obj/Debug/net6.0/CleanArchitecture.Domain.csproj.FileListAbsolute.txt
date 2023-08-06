@@ -10,3 +10,15 @@ C:\Users\Matias\Desktop\curso_clean_architecture_NET\Solution1\CleanArchitecture
 C:\Users\Matias\Desktop\curso_clean_architecture_NET\Solution1\CleanArchitecture.Domain\obj\Debug\net6.0\refint\CleanArchitecture.Domain.dll
 C:\Users\Matias\Desktop\curso_clean_architecture_NET\Solution1\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.pdb
 C:\Users\Matias\Desktop\curso_clean_architecture_NET\Solution1\CleanArchitecture.Domain\obj\Debug\net6.0\ref\CleanArchitecture.Domain.dll
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net6.0\CleanArchitecture.Domain.deps.json
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net6.0\CleanArchitecture.Domain.dll
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net6.0\CleanArchitecture.Domain.pdb
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.csproj.AssemblyReference.cache
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.AssemblyInfoInputs.cache
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.AssemblyInfo.cs
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.dll
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\refint\CleanArchitecture.Domain.dll
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\CleanArchitecture.Domain.pdb
+C:\Users\Matias\Desktop\curso_clean_architecture_NET\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net6.0\ref\CleanArchitecture.Domain.dll
