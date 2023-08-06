@@ -24,7 +24,12 @@ async Task QueryFilter ()
         Console.WriteLine($"{item.Id} -{item.Nombre }");
     }
 
-    var streamerPartialResult = await  dbContext.Streamers.Where(x => x.Nombre.Contains(streamName)).ToListAsync();
+    //var streamerPartialResult = await  dbContext.Streamers.Where(x => x.Nombre.Contains(streamName)).ToListAsync();
+    var streamerPartialResult = await dbContext.Streamers.Where>(x => EF.Functions.Like(x.Nombre, $"%{streamName}%")).ToListAsync();
+    foreach (var item in streamerPartialResult)
+    {
+        Console.WriteLine($"{item.Id} -{item.Nombre}");
+    }
 }
 
 void QueryStreaming()
