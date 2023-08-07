@@ -14,6 +14,7 @@ StreamerDbContext dbContext = new();
 
 Console.WriteLine("Presione cualquier tecla para terminar el programa");
 Console.ReadKey();
+await TrackingAndNotTracking();
 
 async Task TrackingAndNotTracking()
 {
