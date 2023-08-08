@@ -20,5 +20,7 @@ namespace CleanArchitecture.Domain
                                                  // significa que puede ser sobreescrita por una clase derivada o un método en un futuro
 
         public virtual ICollection<Actor>? Actores { get; set; }
+
+        public virtual Director Director { get; set; }
     }
 }
