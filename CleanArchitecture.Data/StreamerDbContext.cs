@@ -26,7 +26,7 @@ namespace CleanArchitecture.Data
                 .HasMany(p => p.Actores)
                 .WithMany(t => t.Videos)
                 .UsingEntity<VideoActor>(
-                   pt => pt.HasKey(e => { e.ActorId, e.VideoId})
+                   pt => pt.HasKey(e => new  { e.ActorId, e.VideoId})
                 );
         }
 
