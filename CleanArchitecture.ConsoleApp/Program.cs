@@ -7,14 +7,62 @@ using System.Security.Cryptography.X509Certificates;
 
 StreamerDbContext dbContext = new();
 
+await AddNewStreamerWithVideo();
+
+
 //await AddNewRecords();
 //QueryStreaming();
 
 //await QueryLinq();
 
+//await TrackingAndNotTracking();
+
 Console.WriteLine("Presione cualquier tecla para terminar el programa");
 Console.ReadKey();
-await TrackingAndNotTracking();
+
+
+async  Task AddActorWithVideo()
+{
+    var actor = new Actor
+    {
+        Nombre = "Brad",
+        Apellido = "Pitt"
+    };
+
+    await dbContext!.AddAsync(actor);
+    await dbContext!.SaveChangesAsync();
+
+    var videoActor = new VideoActor
+    {
+        ActorId = actor.Id,
+        VideoId = 1
+    };
+
+    await dbContext!.AddAsync(videoActor);
+    await dbContext!.SaveChangesAsync();
+}
+
+
+
+
+
+async Task AddNewStreamerWithVideo()
+{
+    var pantalla = new Streamer
+    {
+        Nombre = "Pantalla"
+    };
+
+    var harryPotter = new Video
+    {
+        Nombre = "Harry Potter",
+        Streamer = pantalla
+    };
+    await dbContext!.AddAsync(harryPotter);
+    await dbContext!.SaveChangesAsync();
+}
+
+
 
 async Task TrackingAndNotTracking()
 {
