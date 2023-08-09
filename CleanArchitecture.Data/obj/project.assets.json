@@ -1156,6 +1156,19 @@
           }
         }
       },
+      "CleanArchitecture.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CleanArchitecture.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchitecture.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitecture.Application.dll": {}
+        }
+      },
       "CleanArchitecture.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3503,6 +3516,11 @@
         "version.txt"
       ]
     },
+    "CleanArchitecture.Application/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+      "msbuildProject": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+    },
     "CleanArchitecture.Domain/1.0.0": {
       "type": "project",
       "path": "../CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
@@ -3511,7 +3529,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "CleanArchitecture.Domain >= 1.0.0",
+      "CleanArchitecture.Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9"
     ]
@@ -3524,9 +3542,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Data\\CleanArchitecture.Data.csproj",
-      "projectName": "CleanArchitecture.Data",
-      "projectPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Data\\CleanArchitecture.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Data\\CleanArchitecture.Infraestructure.csproj",
+      "projectName": "CleanArchitecture.Infraestructure",
+      "projectPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Data\\CleanArchitecture.Infraestructure.csproj",
       "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -3550,8 +3568,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {
-              "projectPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj"
+            "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj": {
+              "projectPath": "C:\\Users\\Matias\\Desktop\\curso_clean_architecture_NET\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj"
             }
           }
         }
